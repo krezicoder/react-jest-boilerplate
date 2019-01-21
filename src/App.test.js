@@ -23,4 +23,29 @@ describe("AppMain", () => {
     let wrapper = mount(<App />);
     expect(wrapper.find(Input).length).toEqual(1);
   });
+
+  it("should render Input box with name=username type=text placeholder=Username", () => {
+    let wrapper = mount(<App />);
+    expect(
+      wrapper
+        .find(Input)
+        .first()
+        .find("input")
+        .props().name
+    ).toEqual("username");
+    expect(
+      wrapper
+        .find(Input)
+        .first()
+        .find("input")
+        .props().type
+    ).toEqual("text");
+    expect(
+      wrapper
+        .find(Input)
+        .first()
+        .find("input")
+        .props().placeholder
+    ).toEqual("Username");
+  });
 });
