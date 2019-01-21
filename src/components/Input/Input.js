@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 class Input extends Component {
   render() {
-    return <input type="text" name="" placeholder="" />;
+    const { name, placeholder, type } = this.props;
+    return <input type={type} name={name} placeholder={placeholder} />;
   }
 }
 
