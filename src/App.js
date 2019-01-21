@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <div className="container">
-          <Input />
+          <Input name={"username"} placeholder={"Username"} type={"text"} />
           <div className="row justify-content-center">
             <Button name={"Sign In"} />
             <Button name={"Sign Up"} />
