@@ -48,4 +48,29 @@ describe("AppMain", () => {
         .props().placeholder
     ).toEqual("Username");
   });
+
+  it("should render Input box with name=password type=password placeholder=*********", () => {
+    let wrapper = mount(<App />);
+    expect(
+      wrapper
+        .find(Input)
+        .last()
+        .find("input")
+        .props().name
+    ).toEqual("password");
+    expect(
+      wrapper
+        .find(Input)
+        .last()
+        .find("input")
+        .props().type
+    ).toEqual("password");
+    expect(
+      wrapper
+        .find(Input)
+        .last()
+        .find("input")
+        .props().placeholder
+    ).toEqual("*********");
+  });
 });
