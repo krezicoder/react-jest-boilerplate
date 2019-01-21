@@ -15,6 +15,13 @@ describe("InputComponent", () => {
 
   it("should render input box with name, type, placeholder", () => {
     wrapper = mount(<Input />);
-    expect(wrapper.find("input").length).toEqual(1);
+    wrapper.setProps({
+      name: "username",
+      placeholder: "Username",
+      type: "text"
+    });
+    expect(wrapper.find("input").props().name).toEqual("username");
+    expect(wrapper.find("input").props().placeholder).toEqual("Username");
+    expect(wrapper.find("input").props().type).toEqual("text");
   });
 });
