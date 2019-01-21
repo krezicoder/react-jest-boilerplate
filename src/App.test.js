@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { shallow } from "enzyme";
 import App from "./App";
 import SignInButton from "./components/SignInButton/SignInButton";
+import SignUpButton from "./components/SignUpButton/SignUpButton";
 
 describe("AppMain", () => {
   it("renders without crashing", () => {
