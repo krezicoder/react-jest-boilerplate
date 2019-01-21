@@ -12,4 +12,9 @@ describe("InputComponent", () => {
     wrapper = mount(<Input />);
     expect(wrapper.find("input").length).toEqual(1);
   });
+
+  it("should render input box with name, type, placeholder", () => {
+    wrapper = mount(<Input />);
+    expect(wrapper.find("input").length).toEqual(1);
+  });
 });
