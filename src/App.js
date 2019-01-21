@@ -10,6 +10,11 @@ class App extends Component {
       <div className="container-fluid">
         <div className="container">
           <Input name={"username"} placeholder={"Username"} type={"text"} />
+          <Input
+            name={"password"}
+            placeholder={"*********"}
+            type={"password"}
+          />
           <div className="row justify-content-center">
             <Button name={"Sign In"} />
             <Button name={"Sign Up"} />

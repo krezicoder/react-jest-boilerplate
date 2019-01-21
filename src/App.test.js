@@ -21,7 +21,7 @@ describe("AppMain", () => {
 
   it("should render Input component", () => {
     let wrapper = mount(<App />);
-    expect(wrapper.find(Input).length).toEqual(1);
+    expect(wrapper.find(Input).length).toEqual(2);
   });
 
   it("should render Input box with name=username type=text placeholder=Username", () => {
