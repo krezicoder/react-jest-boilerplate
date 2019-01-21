@@ -4,6 +4,7 @@ import { shallow, mount } from "enzyme";
 import App from "./App";
 import SignInButton from "./components/SignInButton/SignInButton";
 import SignUpButton from "./components/SignUpButton/SignUpButton";
+import Button from "./components/Button/Button";
 
 describe("AppMain", () => {
   it("renders without crashing", () => {
