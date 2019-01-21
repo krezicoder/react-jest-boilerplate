@@ -41,6 +41,15 @@
     ],
     "setupFiles": [
       "./src/setupTests.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}",
+      "!src/**/*.test.{js,jsx}",
+      "!src/**/*.spec.{js,jsx}",
+      "!src/**/empty-module.{js,jsx}",
+      "!src/**/svgTransform.{js,jsx}",
+      "!src/**/serviceWorker.{js,jsx}",
+      "!src/**/index.{js,jsx}"
     ]
   },
   "eslintConfig": {
