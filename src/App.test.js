@@ -15,4 +15,9 @@ describe("AppMain", () => {
     let wrapper = shallow(<App />);
     expect(wrapper.containsMatchingElement(<SignInButton />)).toEqual(true);
   });
+
+  it("should render a signUp button in App", () => {
+    let wrapper = shallow(<App />);
+    expect(wrapper.containsMatchingElement(<SignUpButton />)).toEqual(true);
+  });
 });
