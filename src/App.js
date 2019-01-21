@@ -6,9 +6,13 @@ import Button from "./components/Button/Button";
 class App extends Component {
   render() {
     return (
-      <div>
-        <Button name={"Sign In"} />
-        <Button name={"Sign Up"} />
+      <div className="container-fluid">
+        <div className="container">
+          <div className="row justify-content-center">
+            <Button name={"Sign In"} />
+            <Button name={"Sign Up"} />
+          </div>
+        </div>
       </div>
     );
   }
