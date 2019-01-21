@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 class Button extends Component {
   render() {
-    return <button>Button</button>;
+    const { name } = this.props;
+    return <button>{name}</button>;
   }
 }
 
