@@ -16,4 +16,9 @@ describe("AppMain", () => {
     expect(wrapper.find(Button).length).toEqual(2);
     expect(wrapper.text()).toEqual("Sign InSign Up");
   });
+
+  it("should render Input component", () => {
+    let wrapper = mount(<App />);
+    expect(wrapper.find(Input).length).toEqual(1);
+  });
 });
